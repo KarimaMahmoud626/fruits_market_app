@@ -10,7 +10,7 @@ class SplashBody extends StatefulWidget {
 class _SplashBodyState extends State<SplashBody>
     with SingleTickerProviderStateMixin {
   AnimationController? animationController;
-  Animation? fadingAnimation;
+  Animation<double>? fadingAnimation;
 
   @override
   void initState() {
@@ -23,14 +23,8 @@ class _SplashBodyState extends State<SplashBody>
     fadingAnimation = Tween<double>(
       begin: 0.2,
       end: 1,
-    ).animate(animationController!)..addListener(() {
-      setState(() {
-        if (animationController!.isCompleted) {
-          animationController?.repeat(reverse: true);
-        }
-      });
-    });
-    animationController?.forward();
+    ).animate(animationController!);
+    animationController?.repeat(reverse: true);
   }
 
   @override
@@ -38,16 +32,14 @@ class _SplashBodyState extends State<SplashBody>
     return Column(
       children: [
         Spacer(),
-        Center(
-          child: Opacity(
-            opacity: fadingAnimation?.value,
-            child: Text(
-              'Fruit Market',
-              style: TextStyle(
-                fontSize: 42,
-                color: Color(0xFFFFFFFF),
-                fontWeight: FontWeight.bold,
-              ),
+        FadeTransition(
+          opacity: fadingAnimation!,
+          child: Text(
+            'Fruit Market',
+            style: TextStyle(
+              fontSize: 42,
+              color: Color(0xFFFFFFFF),
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),
