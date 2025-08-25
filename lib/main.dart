@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruits_market/features/splash/presentation/splash_view.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const FruitsMarketApp());
@@ -10,6 +11,9 @@ class FruitsMarketApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: SplashView());
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashView(),
+    );
   }
 }
