@@ -1,0 +1,52 @@
+import 'package:flutter/material.dart';
+import 'package:fruits_market/core/widgets/space_widget.dart';
+
+class PageViewItem extends StatelessWidget {
+  const PageViewItem({super.key, this.title, this.subTitle, this.image});
+
+  final String? title;
+  final String? subTitle;
+  final String? image;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        VerticalSpace(22),
+        Image.asset(image!),
+        VerticalSpace(5),
+        Text(
+          title!,
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+            color: const Color(0xFF2F2E41),
+          ),
+          textAlign: TextAlign.left,
+        ),
+        VerticalSpace(1),
+        Text(
+          subTitle!,
+          style: TextStyle(
+            fontSize: 15,
+            fontWeight: FontWeight.w600,
+            color: const Color(0xFF78787C),
+          ),
+          textAlign: TextAlign.left,
+        ),
+        // Row(
+        //   children: [
+        //     Container(
+        //       height: 18,
+        //       width: 18,
+        //       decoration: BoxDecoration(
+        //         borderRadius: BorderRadius.circular(20),
+        //         color: Colors.black,
+        //       ),
+        //     ),
+        //   ],
+        // ),
+      ],
+    );
+  }
+}

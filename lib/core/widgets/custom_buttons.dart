@@ -3,7 +3,8 @@ import 'package:fruits_market/core/constants.dart';
 import 'package:fruits_market/core/utils/size_config.dart';
 
 class CustomGeneralButton extends StatelessWidget {
-  const CustomGeneralButton({super.key});
+  const CustomGeneralButton({super.key, this.text});
+  final String? text;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class CustomGeneralButton extends StatelessWidget {
       ),
       child: Center(
         child: Text(
-          'Next',
+          text!,
           style: TextStyle(
             fontSize: 14,
             color: const Color(0xFFFFFFFF),
