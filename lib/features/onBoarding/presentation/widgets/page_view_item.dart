@@ -38,18 +38,6 @@ class PageViewItem extends StatelessWidget {
           ),
           textAlign: TextAlign.left,
         ),
-        // Row(
-        //   children: [
-        //     Container(
-        //       height: 18,
-        //       width: 18,
-        //       decoration: BoxDecoration(
-        //         borderRadius: BorderRadius.circular(20),
-        //         color: Colors.black,
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ],
     );
   }

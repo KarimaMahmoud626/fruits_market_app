@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:fruits_market/core/utils/size_config.dart';
 import 'package:fruits_market/core/widgets/custom_buttons.dart';
 import 'package:fruits_market/core/widgets/custom_dots_indicator.dart';
+import 'package:fruits_market/features/auth_feature/presentation/pages/login/login_view.dart';
 import 'package:fruits_market/features/onBoarding/presentation/widgets/custom_page_view.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class OnBoardingBody extends StatefulWidget {
   const OnBoardingBody({super.key});
@@ -59,6 +62,20 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
           left: SizeConfig.defaultSize! * 10,
           right: SizeConfig.defaultSize! * 10,
           child: CustomGeneralButton(
+            onTap: () {
+              if (pageController!.page! < 2) {
+                pageController?.nextPage(
+                  duration: Duration(milliseconds: 500),
+                  curve: Curves.easeIn,
+                );
+              } else {
+                Get.to(
+                  () => LoginView(),
+                  transition: Transition.rightToLeft,
+                  duration: Duration(milliseconds: 500),
+                );
+              }
+            },
             text:
                 pageController!.hasClients
                     ? pageController!.page == 2

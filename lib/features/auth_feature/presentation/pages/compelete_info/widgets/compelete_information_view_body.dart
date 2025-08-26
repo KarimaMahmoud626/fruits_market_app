@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
+class CompeleteInformationViewBody extends StatelessWidget {
+  const CompeleteInformationViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
