@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruits_market/core/utils/size_config.dart';
 import 'package:fruits_market/core/widgets/space_widget.dart';
 
 class PageViewItem extends StatelessWidget {
@@ -12,8 +13,11 @@ class PageViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        VerticalSpace(22),
-        Image.asset(image!),
+        VerticalSpace(20),
+        SizedBox(
+          height: SizeConfig.defaultSize! * 25,
+          child: Image.asset(image!),
+        ),
         VerticalSpace(5),
         Text(
           title!,
@@ -24,12 +28,12 @@ class PageViewItem extends StatelessWidget {
           ),
           textAlign: TextAlign.left,
         ),
-        VerticalSpace(1),
+        VerticalSpace(1.5),
         Text(
           subTitle!,
           style: TextStyle(
             fontSize: 15,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.bold,
             color: const Color(0xFF78787C),
           ),
           textAlign: TextAlign.left,
