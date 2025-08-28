@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fruits_market/core/widgets/custom_text_field.dart';
+import 'package:fruits_market/core/widgets/space_widget.dart';
 
-class CustomInfoItem extends StatelessWidget {
-  const CustomInfoItem({
+class CompeleteInfoItem extends StatelessWidget {
+  const CompeleteInfoItem({
     super.key,
     required this.text,
     this.keyboardType,
@@ -16,6 +17,7 @@ class CustomInfoItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           text,
@@ -26,6 +28,7 @@ class CustomInfoItem extends StatelessWidget {
           ),
           textAlign: TextAlign.left,
         ),
+        VerticalSpace(1.5),
         CustomTextField(keyboardType: keyboardType, maxLines: maxLines),
       ],
     );

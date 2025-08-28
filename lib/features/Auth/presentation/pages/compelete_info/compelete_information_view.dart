@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruits_market/features/auth_feature/presentation/pages/compelete_info/widgets/compelete_information_view_body.dart';
+import 'package:fruits_market/features/Auth/presentation/pages/compelete_info/widgets/compelete_information_view_body.dart';
 
 class CompeleteInformationView extends StatelessWidget {
   const CompeleteInformationView({super.key});

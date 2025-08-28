@@ -4,7 +4,7 @@ import 'package:fruits_market/core/constants.dart';
 import 'package:fruits_market/core/utils/size_config.dart';
 import 'package:fruits_market/core/widgets/custom_buttons.dart';
 import 'package:fruits_market/core/widgets/space_widget.dart';
-import 'package:fruits_market/features/auth_feature/presentation/pages/compelete_info/compelete_information_view.dart';
+import 'package:fruits_market/features/Auth/presentation/pages/compelete_info/compelete_information_view.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
