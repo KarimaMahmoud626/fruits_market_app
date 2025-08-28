@@ -2,7 +2,7 @@ import 'package:fruits_market/features/Auth/domain/repositiories/auth_repo.dart'
 
 class AuthRepoImpl extends AuthRepo {
   @override
-  Future CompeleteInformation({
+  Future compeleteInformation({
     String? name,
     String? phoneNumber,
     String? address,
@@ -11,12 +11,12 @@ class AuthRepoImpl extends AuthRepo {
   }
 
   @override
-  Future LoginWithFacebook() {
+  Future loginWithFacebook() {
     throw UnimplementedError();
   }
 
   @override
-  Future LoginWithGoogle() {
+  Future loginWithGoogle() {
     throw UnimplementedError();
   }
 }

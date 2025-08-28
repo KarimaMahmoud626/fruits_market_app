@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 abstract class AuthRepo {
-  Future LoginWithGoogle();
-  Future LoginWithFacebook();
-  Future CompeleteInformation({
+  Future loginWithGoogle();
+  Future loginWithFacebook();
+  Future compeleteInformation({
     @required String name,
     @required String phoneNumber,
     @required String address,
