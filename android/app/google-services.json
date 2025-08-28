@@ -12,7 +12,12 @@
           "package_name": "com.example.fruits_market"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "934618428636-f3gsalusa6a9m7v3rlhg9oaost4p7li3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyB5zNXdWhmSwQ5A2AwbSRXdxErWEpe5kW0"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934618428636-f3gsalusa6a9m7v3rlhg9oaost4p7li3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "934618428636-c2pl4ate748mn6f5psv3t7sntonnaca1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fruitsMarket"
+              }
+            }
+          ]
         }
       }
     }

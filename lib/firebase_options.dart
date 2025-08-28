@@ -69,6 +69,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '934618428636',
     projectId: 'fruitsfruits-market-a1d85',
     storageBucket: 'fruitsfruits-market-a1d85.firebasestorage.app',
+    iosClientId: '934618428636-c2pl4ate748mn6f5psv3t7sntonnaca1.apps.googleusercontent.com',
     iosBundleId: 'com.example.fruitsMarket',
   );
+
 }
